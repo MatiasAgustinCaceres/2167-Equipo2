@@ -1,29 +1,18 @@
-from matias_agustin_caceres.Complejos import *
+from matias_agustin_caceres.Matriz_3x3 import *
 
 print("Hola mundo")
 
-c = Compejo (5,7)
-a = Compejo (8,9)
+c = Matriz_3x3 (1,2,3,4,5,6,7,8,9)
+a = Matriz_3x3 (1,2,3,4,5,6,7,8,9)
 
-print (c.parte_real)
-print (c.parte_imaginaria)
+for i in range(3):
+    for j in range (3):
+        print (c.matriz[i][j])
+                
 
 c.suma(a)
 
-print (c.parte_real)
-print (c.parte_imaginaria)
 
-c.resta (a)
-
-print (c.parte_real)
-print (c.parte_imaginaria)
-
-c.multiplicacion (a)
-
-print (c.parte_real)
-print (c.parte_imaginaria)
-
-c.division (a)
-
-print (c.parte_real)
-print (c.parte_imaginaria)
+for i in range(3):
+    for j in range (3):
+        print (c.matriz[i][j])
